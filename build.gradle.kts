@@ -12,6 +12,7 @@ dependencies {
     testImplementation("org.assertj", "assertj-core", "3.16.1")
     testImplementation("io.kotest", "kotest-assertions-core-jvm", "4.1.1")
     testImplementation("io.kotest", "kotest-assertions-core", "4.1.1")
+    testImplementation("com.google.truth:truth:1.0.1")
 
     testImplementation(kotlin("stdlib-jdk8"))
     testImplementation(kotlin("reflect"))

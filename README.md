@@ -5,9 +5,9 @@ This repo contains several typical tests implemented with different asserts libr
 2. [kotlin.test](https://kotlinlang.org/api/latest/kotlin.test/)
 3. [AssertJ](https://assertj.github.io/doc/)
 4. [Kotest](https://github.com/kotest/kotest)
+5. [Truth](https://truth.dev/)
 
 TODO:
-* [Truth](https://truth.dev/)
 * [Hamсrest](http://hamcrest.org/JavaHamcrest/)
 * [Strikt](https://strikt.io/)
 * [Kluent](https://markusamshove.github.io/Kluent/)
