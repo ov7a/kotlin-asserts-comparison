@@ -6,9 +6,9 @@ This repo contains several typical tests implemented with different asserts libr
 3. [AssertJ](https://assertj.github.io/doc/)
 4. [Kotest](https://github.com/kotest/kotest)
 5. [Truth](https://truth.dev/)
+6. [Hamсrest](http://hamcrest.org/JavaHamcrest/)
 
 TODO:
-* [Hamсrest](http://hamcrest.org/JavaHamcrest/)
 * [Strikt](https://strikt.io/)
 * [Kluent](https://markusamshove.github.io/Kluent/)
 * [Atrium](https://github.com/robstoll/atrium)
@@ -16,7 +16,7 @@ TODO:
 * [AssertK](https://github.com/willowtreeapps/assertk)
 * [HamKrest](https://github.com/npryce/hamkrest)
 
-Also [ScalaTest](https://www.scalatest.org) is used in different folder.
+Also [ScalaTest](https://www.scalatest.org) is used in a different folder.
 
 The goal of this project is to provide a starting point for choosing asserts library for a Kotlin project. It can be considered as a mini Rosetta stone.
 
