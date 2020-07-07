@@ -8,9 +8,9 @@ This repo contains several typical tests implemented with different asserts libr
 5. [Truth](https://truth.dev/)
 6. [Hamсrest](http://hamcrest.org/JavaHamcrest/)
 7. [Strikt](https://strikt.io/)
+8. [Kluent](https://markusamshove.github.io/Kluent/)
 
 TODO:
-* [Kluent](https://markusamshove.github.io/Kluent/)
 * [Atrium](https://github.com/robstoll/atrium)
 * [Expekt](https://github.com/winterbe/expekt)
 * [AssertK](https://github.com/willowtreeapps/assertk)

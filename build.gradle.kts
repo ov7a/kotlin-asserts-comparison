@@ -16,6 +16,7 @@ dependencies {
     testImplementation("com.google.truth:truth:1.0.1")
     testImplementation("org.hamcrest:hamcrest:2.2")
     testImplementation("io.strikt:strikt-core:0.26.1")
+    testImplementation("org.amshove.kluent:kluent:1.61")
 
     testImplementation(kotlin("stdlib-jdk8"))
     testImplementation(kotlin("reflect"))
