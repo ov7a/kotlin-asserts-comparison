@@ -18,6 +18,7 @@ dependencies {
     testImplementation("io.strikt:strikt-core:0.26.1")
     testImplementation("org.amshove.kluent:kluent:1.61")
     testImplementation("ch.tutteli.atrium:atrium-fluent-en_GB:0.12.0")
+    testImplementation("com.winterbe:expekt:0.5.0")
 
     testImplementation(kotlin("stdlib-jdk8"))
     testImplementation(kotlin("reflect"))
