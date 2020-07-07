@@ -10,7 +10,6 @@ import common.TestData.fizzBuzzMap
 import common.TestData.fizzBuzzMapCopy
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import java.lang.RuntimeException
 
 @ExtendWith(SuccessfulTestReportValidator::class)
 internal abstract class SuccessfulAssertsTestBase(private val asserts: Asserts) : AssertsTestBase() {
@@ -118,12 +117,12 @@ internal abstract class SuccessfulAssertsTestBase(private val asserts: Asserts) 
 
     @Test
     override fun `primitive array asserts should work like others`() {
-        asserts.nativeArrayEqualityAssert(byteArrayOf(1, 2, 3), byteArrayOf(1,2, 3))
+        asserts.primitiveArrayEqualityAssert(byteArrayOf(1, 2, 3), byteArrayOf(1, 2, 3))
     }
 
     @Test
     override fun `primitive array asserts can be negated`() {
-        asserts.nativeArrayEqualityAssertNegation(byteArrayOf(1, 2, 3), byteArrayOf(4, 5,6))
+        asserts.primitiveArrayEqualityAssertNegation(byteArrayOf(1, 2, 3), byteArrayOf(4, 5, 6))
     }
 
     @Test

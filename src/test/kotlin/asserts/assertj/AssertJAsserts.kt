@@ -83,11 +83,11 @@ class AssertJAsserts : Asserts {
         assertThat(actual).isNotEqualTo(unexpected)
     }
 
-    override fun nativeArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
+    override fun primitiveArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
         assertThat(actual).isEqualTo(expected)
     }
 
-    override fun nativeArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
+    override fun primitiveArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
         assertThat(actual).isNotEqualTo(unexpected)
     }
 

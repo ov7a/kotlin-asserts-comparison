@@ -3,13 +3,15 @@ package asserts.kotest
 import common.Asserts
 import common.genericGetType
 import io.kotest.assertions.throwables.shouldThrow
-import io.kotest.matchers.collections.*
+import io.kotest.matchers.collections.shouldContain
+import io.kotest.matchers.collections.shouldContainAll
+import io.kotest.matchers.collections.shouldNotContain
+import io.kotest.matchers.collections.shouldNotContainAnyOf
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
 import io.kotest.matchers.string.shouldContain
 import io.kotest.matchers.string.shouldNotContain
 import io.kotest.matchers.throwable.shouldHaveMessage
-import java.lang.RuntimeException
 
 class KotestAsserts : Asserts {
     override fun <T> simpleAssert(actual: T, expected: T) {
@@ -88,11 +90,11 @@ class KotestAsserts : Asserts {
         actual shouldNotBe unexpected
     }
 
-    override fun nativeArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
+    override fun primitiveArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
         actual shouldBe expected
     }
 
-    override fun nativeArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
+    override fun primitiveArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
         actual shouldNotBe unexpected
     }
 

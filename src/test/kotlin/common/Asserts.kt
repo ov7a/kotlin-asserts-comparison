@@ -26,8 +26,8 @@ interface Asserts {
     fun <T> arrayEqualityAssert(actual: Array<T>, expected: Array<T>)
     fun <T> arrayEqualityAssertNegation(actual: Array<T>, unexpected: Array<T>)
 
-    fun nativeArrayEqualityAssert(actual: ByteArray, expected: ByteArray)
-    fun nativeArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray)
+    fun primitiveArrayEqualityAssert(actual: ByteArray, expected: ByteArray)
+    fun primitiveArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray)
 
     fun <T> structuralAssert(actual: T, expected: T)
     fun <T> structuralAssertNegation(actual: T, unexpected: T)

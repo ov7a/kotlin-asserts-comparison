@@ -11,7 +11,6 @@ import common.TestData.fizzBuzzMapCopy
 import common.TestData.fizzMap
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import java.lang.RuntimeException
 
 @ExtendWith(FailedTestReportValidator::class)
 internal abstract class FailedAssertsTestBase(private val asserts: Asserts) : AssertsTestBase() {
@@ -114,12 +113,12 @@ internal abstract class FailedAssertsTestBase(private val asserts: Asserts) : As
 
     @Test
     override fun `primitive array asserts should work like others`() {
-        asserts.nativeArrayEqualityAssert(byteArrayOf(1, 2, 3), byteArrayOf(3, 4, 5))
+        asserts.primitiveArrayEqualityAssert(byteArrayOf(1, 2, 3), byteArrayOf(3, 4, 5))
     }
 
     @Test
     override fun `primitive array asserts can be negated`() {
-        asserts.nativeArrayEqualityAssertNegation(byteArrayOf(1, 2, 3), byteArrayOf(1, 2, 3))
+        asserts.primitiveArrayEqualityAssertNegation(byteArrayOf(1, 2, 3), byteArrayOf(1, 2, 3))
     }
 
     @Test

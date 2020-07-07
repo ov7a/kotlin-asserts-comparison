@@ -84,11 +84,11 @@ class KotlinTestAsserts : Asserts {
         assertFalse(unexpected.contentEquals(actual))
     }
 
-    override fun nativeArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
+    override fun primitiveArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
         assertTrue(expected.contentEquals(actual))
     }
 
-    override fun nativeArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
+    override fun primitiveArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
         assertFalse(unexpected.contentEquals(actual))
     }
 

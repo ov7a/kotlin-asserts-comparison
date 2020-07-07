@@ -85,11 +85,11 @@ class AtriumAsserts : Asserts {
         expect(actual).notToBe(unexpected)
     }
 
-    override fun nativeArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
+    override fun primitiveArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
         expect(actual).toBe(expected) //no arrays support, see https://github.com/robstoll/atrium/issues/459
     }
 
-    override fun nativeArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
+    override fun primitiveArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
         expect(actual).notToBe(unexpected)
     }
 

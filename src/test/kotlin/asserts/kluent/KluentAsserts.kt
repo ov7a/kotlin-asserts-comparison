@@ -77,11 +77,11 @@ class KluentAsserts : Asserts {
         actual shouldNotBeEqualTo unexpected
     }
 
-    override fun nativeArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
+    override fun primitiveArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
         actual shouldBeEqualTo expected
     }
 
-    override fun nativeArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
+    override fun primitiveArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
         actual shouldNotBeEqualTo unexpected
     }
 
