@@ -7,9 +7,9 @@ This repo contains several typical tests implemented with different asserts libr
 4. [Kotest](https://github.com/kotest/kotest)
 5. [Truth](https://truth.dev/)
 6. [Hamсrest](http://hamcrest.org/JavaHamcrest/)
+7. [Strikt](https://strikt.io/)
 
 TODO:
-* [Strikt](https://strikt.io/)
 * [Kluent](https://markusamshove.github.io/Kluent/)
 * [Atrium](https://github.com/robstoll/atrium)
 * [Expekt](https://github.com/winterbe/expekt)
