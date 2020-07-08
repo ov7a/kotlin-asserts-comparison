@@ -24,7 +24,7 @@ class StriktAsserts : Asserts {
     }
 
     override fun <T> listEqualityAssert(actual: List<T>, expected: List<T>) {
-        expectThat(actual).isEqualTo(expected)
+        expectThat(actual).containsExactly(expected)
     }
 
     override fun <T> listEqualityAssertNegation(actual: List<T>, unexpected: List<T>) {
@@ -32,7 +32,7 @@ class StriktAsserts : Asserts {
     }
 
     override fun <T> setEqualityAssert(actual: Set<T>, expected: Set<T>) {
-        expectThat(actual).isEqualTo(expected)
+        expectThat(actual).containsExactlyInAnyOrder(expected)
     }
 
     override fun <T> setEqualityAssertNegation(actual: Set<T>, unexpected: Set<T>) {
