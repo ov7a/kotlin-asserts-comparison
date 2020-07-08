@@ -20,6 +20,7 @@ dependencies {
     testImplementation("ch.tutteli.atrium:atrium-fluent-en_GB:0.12.0")
     testImplementation("com.winterbe:expekt:0.5.0")
     testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.22")
+    testImplementation("com.natpryce:hamkrest:1.7.0.3")
 
     testImplementation(kotlin("stdlib-jdk8"))
     testImplementation(kotlin("reflect"))

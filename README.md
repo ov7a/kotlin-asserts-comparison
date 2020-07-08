@@ -12,9 +12,7 @@ This repo contains several typical tests implemented with different asserts libr
 9. [Atrium](https://github.com/robstoll/atrium)
 10. [Expekt](https://github.com/winterbe/expekt)
 11. [AssertK](https://github.com/willowtreeapps/assertk)
-
-TODO:
-* [HamKrest](https://github.com/npryce/hamkrest)
+12. [HamKrest](https://github.com/npryce/hamkrest)
 
 Also [ScalaTest](https://www.scalatest.org) is used in a different folder.
 
