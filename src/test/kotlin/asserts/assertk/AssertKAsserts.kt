@@ -23,7 +23,8 @@ class AssertKAsserts : Asserts {
     }
 
     override fun <T> listEqualityAssert(actual: List<T>, expected: List<T>) {
-        assertThat(actual).isEqualTo(expected)
+        val expectedArray = (expected as List<Int>).toTypedArray()
+        assertThat(actual).containsExactly(*expectedArray)
     }
 
     override fun <T> listEqualityAssertNegation(actual: List<T>, unexpected: List<T>) {
@@ -31,7 +32,8 @@ class AssertKAsserts : Asserts {
     }
 
     override fun <T> setEqualityAssert(actual: Set<T>, expected: Set<T>) {
-        assertThat(actual).isEqualTo(expected)
+        val expectedArray = (expected as Set<Int>).toTypedArray()
+        assertThat(actual).containsOnly(*expectedArray)
     }
 
     override fun <T> setEqualityAssertNegation(actual: Set<T>, unexpected: Set<T>) {
@@ -79,7 +81,7 @@ class AssertKAsserts : Asserts {
     }
 
     override fun <T> arrayEqualityAssert(actual: Array<T>, expected: Array<T>) {
-        assertThat(actual).isEqualTo(expected)
+        assertThat(actual).containsExactly(*expected)
     }
 
     override fun <T> arrayEqualityAssertNegation(actual: Array<T>, unexpected: Array<T>) {
@@ -87,7 +89,7 @@ class AssertKAsserts : Asserts {
     }
 
     override fun primitiveArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
-        assertThat(actual).isEqualTo(expected)
+        assertThat(actual).containsExactly(*expected)
     }
 
     override fun primitiveArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
