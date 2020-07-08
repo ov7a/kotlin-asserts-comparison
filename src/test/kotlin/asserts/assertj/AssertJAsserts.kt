@@ -4,6 +4,7 @@ import common.Asserts
 import common.genericGetType
 import org.assertj.core.api.Assertions.assertThat
 import org.assertj.core.api.Assertions.assertThatThrownBy
+import org.assertj.core.util.IterableUtil.toArray
 
 class AssertJAsserts : Asserts {
     override fun <T> simpleAssert(actual: T, expected: T) {
@@ -23,7 +24,7 @@ class AssertJAsserts : Asserts {
     }
 
     override fun <T> listEqualityAssert(actual: List<T>, expected: List<T>) {
-        assertThat(actual).isEqualTo(expected)
+        assertThat(actual).containsExactly(*toArray(expected))
     }
 
     override fun <T> listEqualityAssertNegation(actual: List<T>, unexpected: List<T>) {
@@ -31,7 +32,7 @@ class AssertJAsserts : Asserts {
     }
 
     override fun <T> setEqualityAssert(actual: Set<T>, expected: Set<T>) {
-        assertThat(actual).isEqualTo(expected)
+        assertThat(actual).hasSameElementsAs(expected)
     }
 
     override fun <T> setEqualityAssertNegation(actual: Set<T>, unexpected: Set<T>) {
@@ -79,7 +80,7 @@ class AssertJAsserts : Asserts {
     }
 
     override fun <T> arrayEqualityAssert(actual: Array<T>, expected: Array<T>) {
-        assertThat(actual).isEqualTo(expected)
+        assertThat(actual).containsExactly(*expected)
     }
 
     override fun <T> arrayEqualityAssertNegation(actual: Array<T>, unexpected: Array<T>) {
@@ -87,7 +88,7 @@ class AssertJAsserts : Asserts {
     }
 
     override fun primitiveArrayEqualityAssert(actual: ByteArray, expected: ByteArray) {
-        assertThat(actual).isEqualTo(expected)
+        assertThat(actual).containsExactly(*expected)
     }
 
     override fun primitiveArrayEqualityAssertNegation(actual: ByteArray, unexpected: ByteArray) {
