@@ -11,9 +11,9 @@ This repo contains several typical tests implemented with different asserts libr
 8. [Kluent](https://markusamshove.github.io/Kluent/)
 9. [Atrium](https://github.com/robstoll/atrium)
 10. [Expekt](https://github.com/winterbe/expekt)
+11. [AssertK](https://github.com/willowtreeapps/assertk)
 
 TODO:
-* [AssertK](https://github.com/willowtreeapps/assertk)
 * [HamKrest](https://github.com/npryce/hamkrest)
 
 Also [ScalaTest](https://www.scalatest.org) is used in a different folder.
