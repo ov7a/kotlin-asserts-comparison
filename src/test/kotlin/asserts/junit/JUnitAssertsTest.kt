@@ -2,4 +2,4 @@ package asserts.junit
 
 import common.AssertsFullTest
 
-class JUnitAssertsTest: AssertsFullTest(JUnitAsserts())
+class JUnitAssertsTest : AssertsFullTest(JUnitAsserts())

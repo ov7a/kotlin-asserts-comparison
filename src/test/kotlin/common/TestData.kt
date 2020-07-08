@@ -77,7 +77,7 @@ internal object TestData {
 }
 
 @Suppress("UNCHECKED_CAST", "IMPLICIT_CAST_TO_ANY")
-fun <T> genericGetType(desiredType: String): T = when(desiredType) {
+fun <T> genericGetType(desiredType: String): T = when (desiredType) {
     "str" -> "str"
     "int" -> 1
     else -> "unknown"

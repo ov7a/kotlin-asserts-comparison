@@ -39,7 +39,7 @@ internal abstract class SuccessfulAssertsTestBase(private val asserts: Asserts) 
     @Test
     override fun `exception assert should look ok`() {
         asserts.exceptionAssert(RuntimeException::class.java, "SomeMessage") {
-            throw RuntimeException("SomeMessage") 
+            throw RuntimeException("SomeMessage")
         }
     }
 

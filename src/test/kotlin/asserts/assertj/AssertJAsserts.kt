@@ -25,12 +25,15 @@ class AssertJAsserts : Asserts {
     override fun <T> listEqualityAssert(actual: List<T>, expected: List<T>) {
         assertThat(actual).isEqualTo(expected)
     }
+
     override fun <T> listEqualityAssertNegation(actual: List<T>, unexpected: List<T>) {
         assertThat(actual).isNotEqualTo(unexpected)
     }
+
     override fun <T> setEqualityAssert(actual: Set<T>, expected: Set<T>) {
         assertThat(actual).isEqualTo(expected)
     }
+
     override fun <T> setEqualityAssertNegation(actual: Set<T>, unexpected: Set<T>) {
         assertThat(actual).isNotEqualTo(unexpected)
     }
@@ -107,7 +110,7 @@ class AssertJAsserts : Asserts {
         assertThat(actual).isEqualTo(expected)
     }
 
-    override fun genericDerivingTest(){
+    override fun genericDerivingTest() {
         assertThat(genericGetType<String>("str")).isEqualTo(2)
     }
 

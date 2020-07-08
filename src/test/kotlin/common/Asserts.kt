@@ -7,7 +7,7 @@ interface Asserts {
     fun substringAssert(haystack: String, needle: String)
     fun substringAssertNegation(haystack: String, needle: String)
 
-    fun <T: Throwable> exceptionAssert(expectedClass: Class<T>, expectedMessage: String, block: () -> Unit)
+    fun <T : Throwable> exceptionAssert(expectedClass: Class<T>, expectedMessage: String, block: () -> Unit)
 
     fun <T> listEqualityAssert(actual: List<T>, expected: List<T>)
     fun <T> listEqualityAssertNegation(actual: List<T>, unexpected: List<T>)
