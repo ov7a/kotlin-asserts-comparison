@@ -18,6 +18,8 @@ Also [ScalaTest](https://www.scalatest.org) is used in a different folder.
 
 The goal of this project is to provide a starting point for choosing asserts library for a Kotlin project. It can be considered as a mini Rosetta stone.
 
+See the results [here](/results.md) (short version, EN) or [here](https://habr.com/ru/post/510206/) (detailed version, RU).
+
 Feel free to contribute and criticize.
 
 License: MIT.
