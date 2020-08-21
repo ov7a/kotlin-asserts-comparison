@@ -18,7 +18,7 @@ Each requirement gives 1, 0.5 or 0 to the total sum.
 
 | Library | Integration | Detailed message | Obviousness | Substring | Exceptions | Collections | Negations | Deriving types | Complex structures | Total |
 | ---------- | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
-| Kotest     |     ±      |        ±        |        +      |     +     |      +     |     +     |     +     |     no     |         -         |  6.0  |
+| Kotest     |     ±      |        ±        |        +      |     +     |      +     |     +     |     +     |     no     |         +         |  7.0  |
 | Kluent     |     ±      |        ±        |        +      |     +     |      +     |     +     |     +     |     no     |         -         |  6.0  |
 | AssertJ    |     ±      |        +        |        ±      |     +     |      ±     |     +     |     +     |     no     |         ±         |  6.0  |
 | Truth      |     ±      |        +        |        +      |     +     |      -     |     +     |     +     |     no     |         -         |  5.5  |
